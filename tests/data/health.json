@@ -1,0 +1,1 @@
+{"status": "ok", "version": "0.1.0", "hosted": true, "limits": {"max_window_days": 90, "max_aoi_deg2": 100.0, "live_max_aoi_deg2": 1.0, "rate_limit_per_minute": 20}}

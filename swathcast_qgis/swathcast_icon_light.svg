@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">swathcast — ícone para tema claro</title>
+  <desc id="desc">Satélite inclinado, faixa de imageamento azul, turquesa e verde, arco da Terra e marcador de localização. Fundo transparente.</desc>
+  <!-- Earth horizon: quiet context behind the imaging swath. -->
+  <path d="M3.5 58.5C19 41.3 43.5 40.3 61 58.5Q31.5 61 3.5 58.5Z" fill="#E6F0F3"/>
+  <path d="M8 56L14 51L23 49L21 54L16 57Z" fill="#ACCCB5"/>
+  <path d="M48 50L54 53L58 57L51 57L47 54Z" fill="#BED7DF"/>
+  <path d="M3.5 58.5C19 41.3 43.5 40.3 61 58.5" fill="none" stroke="#082F50" stroke-width="1.9" stroke-linecap="round"/>
+  <!-- Three broad scan columns retain the brand at toolbar scale. -->
+  <g>
+    <path d="M33 26C31.5 37 25 48 14 58C26.5 54.8 43 54.5 58 57C49 45.8 40 35 33 26Z" fill="#16B9B4"/>
+    <path d="M33 26C31.5 37 25 48 14 58C18.1667 56.9333 22.7778 56.1889 27.6296 55.763C30 46 32 36 33 26Z" fill="#0589B9"/>
+    <path d="M33 26C36 35 40 45 42.7037 55.437C47.8333 55.6444 53 56.1667 58 57C49 45.8 40 35 33 26Z" fill="#A9CE52"/>
+    <g fill="none" stroke="#FFFFFF" stroke-opacity=".84" stroke-width="1.15" stroke-linecap="round">
+      <path d="M33 26C32 36 30 46 27.6296 55.763"/>
+      <path d="M33 26C36 35 40 45 42.7037 55.437"/>
+      <path d="M28.2 40Q36 35.6 44.1 40"/>
+      <path d="M22 49Q37 43.8 51.5 49"/>
+    </g>
+  </g>
+  <!-- Tilt matches the satellite silhouette in the supplied logo. -->
+  <g transform="rotate(-28 29 17)">
+    <path d="M20 16H25M33 16H39" stroke="#082F50" stroke-width="2.4"/>
+    <rect x="5" y="12.5" width="16" height="9" rx=".7" fill="#082F50"/>
+    <rect x="37" y="12.5" width="16" height="9" rx=".7" fill="#082F50"/>
+    <g stroke="#FFFFFF" stroke-width="1" opacity=".9">
+      <path d="M10.3 12.5V21.5M15.7 12.5V21.5M5 17H21"/>
+      <path d="M42.3 12.5V21.5M47.7 12.5V21.5M37 17H53"/>
+    </g>
+    <rect x="23.5" y="10.5" width="11" height="12.5" rx="1.7" fill="#082F50"/>
+    <path d="M26 8H32" stroke="#082F50" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M29 22V24" stroke="#082F50" stroke-width="2.1"/>
+    <path d="M23.5 25Q29 21.4 34.5 25Q29 28.5 23.5 25Z" fill="#082F50"/>
+  </g>
+  <!-- Inverted pin contrast is specific to each theme. -->
+  <path d="M46 58C43.8 55.2 40 51.4 40 47.9A6 6 0 0 1 52 47.9C52 51.4 48.2 55.2 46 58Z" fill="#082F50" stroke="#FFFFFF" stroke-width="1.7" stroke-linejoin="round"/>
+  <circle cx="46" cy="47.7" r="2.15" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,25 @@
+[general]
+name=SwathCast
+qgisMinimumVersion=3.28
+supportsQt6=True
+description=When will a satellite image your study area? Forecasts Sentinel, Landsat, CBERS/Amazonia, MODIS, VIIRS and PACE overpasses as footprint layers.
+about=Draw a point or a rectangle, or pick polygons from a layer; choose the satellites and the dates. The plugin asks the swathview server (built on the SwathCast package) when each satellite will image the area, groups the returned tiles and scenes into passes, and adds the footprints as a time-enabled layer: date and local time, kind of evidence (planned, operator forecast, archive-derived, cycle-projected, orbit-derived, in catalogue), share of the area covered and angles. Results export to a calendar (.ics), KML or CSV. Only the area, the dates and the satellites are sent to the server. No extra Python packages are needed.
+version=0.4.0
+author=Rogerio Flores Jr
+email=rogerio.floresjr@gmail.com
+homepage=https://swathview.pages.dev/docs#qgis
+repository=https://github.com/Rogerio-floresjr/swathcast-qgis
+tracker=https://github.com/Rogerio-floresjr/swathcast-qgis/issues
+category=Web
+tags=satellite,remote sensing,overpass,acquisition,planning,field campaign,sentinel,landsat,cbers,amazonia,modis,viirs
+icon=swathcast_icon_light.svg
+experimental=True
+deprecated=False
+hasProcessingProvider=no
+changelog=0.4.0 Info tab links to the privacy notice and the terms of use, in the language of QGIS. GPL-2.0-or-later license. Past dates: the server answers them with the scenes found in the catalogues (PRISMA, which has no catalogue, keeps its forecast), so the "Include archive images" and "Historical orbits" options are gone; old web links that carry them still open. When the server fetched only part of the archive, the summary says how much and that searching again fetches the rest. Needs the swathview release with past-window answers.
+    0.3.0 New panel: side tabs Search, Results, Advanced and Info, with the search button pinned below; cool blue buttons readable on dark and light themes; SwathCast name and version at the top; Info tab with the logo, how to use, where each forecast comes from and the author. Open a swathview web link to run the same search, and copy a web link of your results to share. The satellite list shows a spinner while the server answers; the first-run notice is the Info tab. The last satellite list is remembered and shown at once while the free server wakes. A refusing proxy, DNS or SSL failure is reported at once instead of being retried as a sleeping server. Quick 7/15/30-day date buttons. New icon, in a dark-theme and a light-theme version. The plugin is titled SwathCast.
+    0.2.3 Selecting a pass no longer flashes it red and yellow: one soft translucent pulse, and a translucent neutral selection colour on the footprints layer (QGIS 3.34+).
+    0.2.2 Data-sources link opens the sources section of the swathview documentation; homepage is its QGIS plugin section.
+    0.2.1 Welcome notice on first opening (hobby project, free hosting, what is sent, data sources), reopened from the help button; evidence label read from the server when it sends one.
+    0.2.0 Results grouped into passes (tiles and scenes kept underneath); area share from the union of a pass's footprints (<1 %, edge only, point inside); evidence labels say where each forecast comes from; 'Stop waiting'; retry button; temporary-layer notice; lighter footprints; single area outline; English plurals.
+    0.1.0 First version: point, rectangle, map extent and layer areas; 19 missions; time-enabled footprints; calendar, KML and CSV export; English and Portuguese.

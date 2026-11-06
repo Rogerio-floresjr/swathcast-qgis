@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this plugin, please cite it as below."
+title: "SwathCast for QGIS"
+abstract: >-
+  A QGIS plugin that forecasts when Earth-observation satellites (Sentinel-1/2/3,
+  Landsat 8/9, CBERS-4/4A, Amazonia-1, MODIS, VIIRS, PACE, EnMAP, PRISMA) will image an
+  area, and lists the scenes the agencies' catalogues hold for past dates, with the
+  evidence each forecast rests on.
+type: software
+authors:
+  - given-names: Rogerio
+    family-names: Flores Junior
+    email: rogerio.floresjr@gmail.com
+license: GPL-2.0-or-later
+version: 0.4.0
+date-released: "2026-11-06"
+repository-code: "https://github.com/Rogerio-floresjr/swathcast-qgis"
+url: "https://swathview.pages.dev/docs#qgis"
+keywords:
+  - QGIS
+  - remote sensing
+  - satellite overpass
+  - acquisition planning
+  - CBERS
+  - Sentinel
+  - Landsat
